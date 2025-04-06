@@ -1,0 +1,37 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- Background -->
+    <path
+        android:fillColor="#FFFDE7"
+        android:pathData="M0,0h24v24h-24z"/>
+    
+    <!-- Corn Stalk -->
+    <path
+        android:fillColor="#33691E"
+        android:pathData="M12,4L12,20"
+        android:strokeWidth="2"
+        android:strokeColor="#33691E"/>
+    
+    <!-- Corn Cob -->
+    <path
+        android:fillColor="#FDD835"
+        android:pathData="M10,8h4v8h-4z"/>
+    
+    <!-- Corn Kernels -->
+    <path
+        android:fillColor="#F9A825"
+        android:pathData="M10,8h1v1h-1z"/>
+    <path
+        android:fillColor="#F9A825"
+        android:pathData="M11,9h1v1h-1z"/>
+    <path
+        android:fillColor="#F9A825"
+        android:pathData="M12,8h1v1h-1z"/>
+    <path
+        android:fillColor="#F9A825"
+        android:pathData="M13,9h1v1h-1z"/>
+</vector>

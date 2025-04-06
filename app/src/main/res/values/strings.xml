@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">mittimanthan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="crop_prediction">Crop Prediction</string>
+    <string name="enter_parameters">Enter soil parameters to get crop recommendations</string>
+    <string name="predict_crop">Predict Crop</string>
+    <string name="prediction_result">Prediction Result</string>
+    <string name="crop_information">Crop Information</string>
+    <string name="growing_season">Growing Season: %s</string>
+    <string name="water_requirement">Water Requirement: %s</string>
+    <string name="soil_requirement">Soil Requirement: %s</string>
+    <string name="price_format">₹%.2f</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="user">Farmer</string>
+    <string name="language_selection_prompt">Select Language</string>
+    <string-array name="supported_languages">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Marathi</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Kannada</item>
+        <item>Malayalam</item>
+        <item>Bengali</item>
+        <item>Gujarati</item>
+        <item>Punjabi</item>
+    </string-array>
+</resources>

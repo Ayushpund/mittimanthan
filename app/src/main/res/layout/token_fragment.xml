@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header Section with Animation -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/headerCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/gradient_green">
+
+                <ImageView
+                    android:id="@+id/headerImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_plant_large"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="-20dp"
+                    android:alpha="0.3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Soil Health Consultation"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Connect with soil experts for personalized advice"
+                        android:textSize="16sp"
+                        android:textColor="#E0FFFFFF"
+                        android:layout_marginTop="8dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/learnMoreButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Learn More"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="16dp"
+                        app:cornerRadius="8dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:textColor="#4CAF50"
+                        app:icon="@drawable/ic_info"
+                        app:iconTint="#4CAF50"
+                        app:iconGravity="textStart"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Progress Steps with Animation -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Consultation Process"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <!-- Step 1 -->
+                    <LinearLayout
+                        android:id="@+id/stepOneLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/stepOneIcon"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_person_search"
+                            android:background="@drawable/circle_background_green"
+                            android:padding="12dp"
+                            app:tint="#FFFFFF"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select Expert"
+                            android:textSize="14sp"
+                            android:textColor="#4CAF50"
+                            android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/stepOneDivider"
+                        android:layout_width="24dp"
+                        android:layout_height="2dp"
+                        android:background="#4CAF50"/>
+
+                    <!-- Step 2 -->
+                    <LinearLayout
+                        android:id="@+id/stepTwoLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:alpha="0.5">
+
+                        <ImageView
+                            android:id="@+id/stepTwoIcon"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_calendar"
+                            android:background="@drawable/circle_background_gray"
+                            android:padding="12dp"
+                            app:tint="#FFFFFF"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Book Slot"
+                            android:textSize="14sp"
+                            android:textColor="#757575"
+                            android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/stepTwoDivider"
+                        android:layout_width="24dp"
+                        android:layout_height="2dp"
+                        android:background="#E0E0E0"/>
+
+                    <!-- Step 3 -->
+                    <LinearLayout
+                        android:id="@+id/stepThreeLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:alpha="0.5">
+
+                        <ImageView
+                            android:id="@+id/stepThreeIcon"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_file_upload"
+                            android:background="@drawable/circle_background_gray"
+                            android:padding="12dp"
+                            app:tint="#FFFFFF"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Share Report"
+                            android:textSize="14sp"
+                            android:textColor="#757575"
+                            android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Filter Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Filter Experts"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="12dp"/>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/expertiseChipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:singleSelection="true"
+                    app:selectionRequired="true"
+                    app:chipSpacingHorizontal="8dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/allChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All"
+                        app:chipBackgroundColor="@color/chip_background_selector"
+                        app:chipStrokeColor="#4CAF50"
+                        app:chipStrokeWidth="1dp"
+                        android:checked="true"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/soilAnalysisChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Soil Analysis"
+                        app:chipBackgroundColor="@color/chip_background_selector"
+                        app:chipStrokeColor="#4CAF50"
+                        app:chipStrokeWidth="1dp"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/organicFarmingChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Organic Farming"
+                        app:chipBackgroundColor="@color/chip_background_selector"
+                        app:chipStrokeColor="#4CAF50"
+                        app:chipStrokeWidth="1dp"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/cropRotationChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Crop Rotation"
+                        app:chipBackgroundColor="@color/chip_background_selector"
+                        app:chipStrokeColor="#4CAF50"
+                        app:chipStrokeWidth="1dp"/>
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Available Experts Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available Soil Experts"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Changed from expertsRecyclerView to doctorsRecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/doctorsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:nestedScrollingEnabled="false"
+            tools:listitem="@layout/expert_item"
+            tools:itemCount="3"/>
+
+        <!-- Appointment Booking Card (Initially Hidden) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/appointmentBookingCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Book Appointment"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:id="@+id/selectedExpertName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Name"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#4CAF50"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Date"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp"/>
+
+                <CalendarView
+                    android:id="@+id/appointmentCalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Time Slot"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_marginBottom="16dp">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/timeSlotChipGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:singleSelection="true"
+                        app:selectionRequired="true"
+                        app:chipSpacingHorizontal="8dp">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/slot9am"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="9:00 AM"
+                            app:chipBackgroundColor="@color/chip_background_selector"
+                            app:chipStrokeColor="#4CAF50"
+                            app:chipStrokeWidth="1dp"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/slot10am"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10:00 AM"
+                            app:chipBackgroundColor="@color/chip_background_selector"
+                            app:chipStrokeColor="#4CAF50"
+                            app:chipStrokeWidth="1dp"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/slot11am"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11:00 AM"
+                            app:chipBackgroundColor="@color/chip_background_selector"
+                            app:chipStrokeColor="#4CAF50"
+                            app:chipStrokeWidth="1dp"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/slot2pm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2:00 PM"
+                            app:chipBackgroundColor="@color/chip_background_selector"
+                            app:chipStrokeColor="#4CAF50"
+                            app:chipStrokeWidth="1dp"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/slot3pm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3:00 PM"
+                            app:chipBackgroundColor="@color/chip_background_selector"
+                            app:chipStrokeColor="#4CAF50"
+                            app:chipStrokeWidth="1dp"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/slot4pm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4:00 PM"
+                            app:chipBackgroundColor="@color/chip_background_selector"
+                            app:chipStrokeColor="#4CAF50"
+                            app:chipStrokeWidth="1dp"/>
+                    </com.google.android.material.chip.ChipGroup>
+                </HorizontalScrollView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/confirmBookingButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm Booking"
+                    android:textAllCaps="false"
+                    app:cornerRadius="8dp"
+                    android:padding="12dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Appointment Confirmation Card (Initially Hidden) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/appointmentConfirmationCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Appointment Details"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:id="@+id/doctorNameConfirmed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Name"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#4CAF50"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/appointmentDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date and Time: TBD"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/consultationFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Consultation Fee: ₹500"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/doctorPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone: +91XXXXXXXXXX"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/confirmationStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status: Waiting for confirmation"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFA000"
+                    android:layout_marginBottom="16dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Soil Report Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/soilReportCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Soil Report"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please upload your soil test report for the doctor to review before your appointment."
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="16dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/selectReportButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select PDF Report"
+                    android:textAllCaps="false"
+                    app:cornerRadius="8dp"
+                    app:icon="@drawable/ic_file_upload"
+                    app:iconGravity="textStart"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/pdfPreviewImage"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_pdf"
+                        android:background="@drawable/circle_background_light_green"
+                        android:padding="12dp"
+                        android:layout_marginEnd="16dp"/>
+
+                    <TextView
+                        android:id="@+id/selectedFileText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No file selected"
+                        android:textSize="14sp"
+                        android:textColor="#333333"/>
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/shareReportButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Share Report with Doctor"
+                    android:textAllCaps="false"
+                    app:cornerRadius="8dp"
+                    android:enabled="false"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

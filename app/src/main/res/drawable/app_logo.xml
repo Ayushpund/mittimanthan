@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Leaf shape -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
+
+    <!-- Optional second leaf for layered effect -->
+    <path
+        android:fillColor="#388E3C"
+        android:pathData="M6.67,14.86C6.67,14.86 7.89,16.11 9.18,16.11C10.88,16.11 12.93,14.86 13.87,13.71C14.53,12.89 15.59,11.4 16,10.5C13.5,11.5 10.5,13 9.18,13.71C7.86,14.43 6.67,14.86 6.67,14.86Z"/>
+
+    <!-- Small circle for seed/growth representation -->
+    <path
+        android:fillColor="#1B5E20"
+        android:pathData="M7,17C6.45,17 6,16.55 6,16C6,15.45 6.45,15 7,15C7.55,15 8,15.45 8,16C8,16.55 7.55,17 7,17Z"/>
+</vector>

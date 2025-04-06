@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- Background -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M2,2h20v20h-20z"/>
+    
+    <!-- Product Bag -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M5,4v16h14v-16h-14zM17,18h-10v-12h10v12z"/>
+    
+    <!-- NPK Label -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M7,7h10v3h-10z"/>
+    
+    <!-- N Symbol -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M8,8h2v1h-2z"/>
+    
+    <!-- P Symbol -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M11,8h2v1h-2z"/>
+    
+    <!-- K Symbol -->
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M14,8h2v1h-2z"/>
+    
+    <!-- Content Info -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M7,12h10v1h-10z"/>
+    
+    <!-- Weight Label -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M9,15h6v1h-6z"/>
+</vector>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Details"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/accent_color"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Payment Method"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/paymentOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/upiOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPI Payment"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/codOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cash on Delivery"/>
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/upiIdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter UPI ID"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/upiIdInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/payButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay Now"
+        android:textAllCaps="false"/>
+</LinearLayout> 

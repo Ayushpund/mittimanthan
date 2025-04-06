@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Add this style to your existing styles.xml file -->
+    <style name="circleImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    
+    <!-- Add the missing Theme.PICT theme -->
+    <style name="Theme.PICT" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnSurface">@color/on_surface_light</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary_light</item>
+        <item name="android:textColorSecondary">@color/text_secondary_light</item>
+    </style>
+    
+    <!-- SearchView style -->
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:background">@android:color/white</item>
+        <item name="queryBackground">@android:color/transparent</item>
+        <item name="submitBackground">@android:color/transparent</item>
+        <item name="closeIcon">@drawable/ic_dap</item>
+        <item name="searchIcon">@drawable/ic_search</item>
+        <item name="queryHint">Search...</item>
+    </style>
+    
+    <!-- Custom bottom sheet dialog theme -->
+    <style name="CustomBottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+    </style>
+    
+    <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearanceBottomSheetDialog</item>
+    </style>
+    
+    <style name="CustomShapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+</resources>

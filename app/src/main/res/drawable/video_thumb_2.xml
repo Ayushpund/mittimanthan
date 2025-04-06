@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="140dp"
+    android:viewportWidth="200"
+    android:viewportHeight="140">
+    
+    <!-- Background -->
+    <path
+        android:fillColor="#DCEDC8"
+        android:pathData="M0,0h200v140h-200z"/>
+    
+    <!-- Bug Icon -->
+    <path
+        android:fillColor="#689F38"
+        android:pathData="M100,50a30,20 0 1,1 0,40a30,20 0 1,1 0,-40"/>
+    
+    <!-- Play Button -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M85,65l40,20l-40,20z"/>
+</vector>

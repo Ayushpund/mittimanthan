@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Options"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/accent_color"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/googlePayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Google Pay"
+        android:drawableStart="@drawable/ic_gpay"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/phonepeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PhonePe"
+        android:drawableStart="@drawable/ic_phonepe"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/paytmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paytm"
+        android:drawableStart="@drawable/ic_paytm"
+        android:padding="12dp"/>
+
+</LinearLayout> 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="home"
+        tools:ignore="HardcodedText"/>
+
+    <item
+        android:id="@+id/nav_schemes"
+        android:icon="@drawable/ic_schemes"
+        android:title="Government Schemes"
+        tools:ignore="HardcodedText"/>
+
+    <item
+        android:id="@+id/nav_prediction"
+        android:icon="@drawable/ic_prediction"
+        android:title="Crop Prediction"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/nav_organic"
+        android:icon="@drawable/ic_organic"
+        android:title="Organic Farming"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/nav_market"
+        android:icon="@drawable/ic_market"
+        android:title="Marketplace"
+        tools:ignore="HardcodedText" />
+</menu>

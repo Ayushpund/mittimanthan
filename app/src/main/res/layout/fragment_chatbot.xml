@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Soil Health Assistant"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"
+        android:padding="16dp"
+        android:background="#F5F7FA"
+        android:elevation="4dp"/>
+
+    <!-- Added language spinner -->
+    <Spinner
+        android:id="@+id/languageSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_message_input"
+        android:padding="8dp"/>
+
+    <!-- Added FAQ chip group -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="8dp">
+        
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/faqChipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            app:singleLine="true">
+            
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pH Levels"/>
+                
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moisture"/>
+                
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nutrients"/>
+                
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature"/>
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#F5F7FA"
+        android:elevation="4dp">
+
+        <!-- Changed ID to queryEditText -->
+        <EditText
+            android:id="@+id/queryEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Ask about soil health..."
+            android:padding="12dp"
+            android:background="@drawable/bg_message_input"
+            android:maxLines="4"
+            android:inputType="textMultiLine"/>
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_send"
+            android:background="@drawable/circle_background_green"
+            android:contentDescription="Send message"/>
+    </LinearLayout>
+</LinearLayout>

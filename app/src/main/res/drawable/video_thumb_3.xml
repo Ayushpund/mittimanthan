@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="140dp"
+    android:viewportWidth="200"
+    android:viewportHeight="140">
+    
+    <!-- Background -->
+    <path
+        android:fillColor="#E8F5E9"
+        android:pathData="M0,0h200v140h-200z"/>
+    
+    <!-- Compost Bin Icon -->
+    <path
+        android:fillColor="#33691E"
+        android:pathData="M70,40h60v60h-60z"/>
+    
+    <!-- Play Button -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M85,65l40,20l-40,20z"/>
+</vector>

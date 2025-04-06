@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:titleTextAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            app:titleTextColor="@color/black"
+            app:title="Agro Market"
+            app:menu="@menu/market_menu"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Search Bar - Elevated and Prominent -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:strokeWidth="0dp">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    app:iconifiedByDefault="false"
+                    app:queryHint="Search products..."
+                    app:searchIcon="@drawable/ic_search"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Banner Carousel - Full Width, Rounded Corners -->
+
+
+            <!-- Categories Section - Clean with Icons -->
+
+
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="16dp"/>
+
+            <!-- Featured Products Section - Premium Look -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Featured Products"
+                    android:textSize="16sp"
+                    android:textColor="#212121"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:id="@+id/viewAllFeatured"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View All"
+                    android:textSize="14sp"
+                    android:textColor="@color/design_default_color_primary"
+                    android:padding="4dp"/>
+            </LinearLayout>
+
+            <!-- Featured Products Horizontal Scroll -->
+
+            <!-- All Products Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="All Products"
+                    android:textSize="16sp"
+                    android:textColor="#212121"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <!-- Filter Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filterButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="Filter"
+                    android:textSize="12sp"
+                    app:icon="@drawable/ic_filter"
+                    app:iconGravity="textStart"
+                    app:cornerRadius="4dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+            </LinearLayout>
+
+            <!-- Products Grid -->
+            <!-- Fix the constraint reference to a view that exists in the layout -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:clipToPadding="false" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Cart FAB with Badge -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cartFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/ic_cart"
+        app:tint="@color/white"
+        app:backgroundTint="@color/design_default_color_primary"
+        app:elevation="6dp"
+        app:borderWidth="0dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

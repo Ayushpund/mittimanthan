@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1000dp"
+    android:height="300dp"
+    android:viewportWidth="1000"
+    android:viewportHeight="300">
+    
+    <!-- Background -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M0,0h1000v300h-1000z"/>
+    
+    <!-- Farm Field Pattern -->
+    <path
+        android:fillColor="#388E3C"
+        android:pathData="M0,150c83.3,0 166.7,-50 250,-50s166.7,50 250,50s166.7,-50 250,-50s166.7,50 250,50v150h-1000z"/>
+    
+    <!-- Sun -->
+    <path
+        android:fillColor="#FDD835"
+        android:pathData="M800,80a40,40 0 1,1 0,80a40,40 0 1,1 0,-80"/>
+</vector>
